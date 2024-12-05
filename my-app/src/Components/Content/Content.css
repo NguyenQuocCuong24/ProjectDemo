@@ -1,0 +1,401 @@
+    /* Container bao quanh ảnh và nội dung */
+    .banner-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CSS cho ảnh banner */
+    .banner {
+        padding-top: 30px;
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+
+    /* Vị trí và kiểu dáng của chữ overlay */
+    .text-overlay {
+        position: absolute;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text-overlay h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .text-overlay h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .text-overlay p {
+        font-size: 1.2rem;
+    }
+
+    /* CSS cho các cột thông tin */
+    .stats-overlay {
+        position: absolute;
+        bottom: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        gap: 20px;
+        z-index: 10;
+    }
+
+    /* Stats item */
+    .stat {
+        background-color: #f5f7f9;
+        border-radius: 10px;
+        color: rgb(26, 25, 25);
+        flex: 1;
+        padding: 20px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+        font-family: "Helvetica";
+        margin-bottom: 10px;
+    }
+
+    .stat p {
+        font-family: "Helvetica";
+        font-weight: 200;
+        font-size: 1.5rem;
+        color: #5b5959;
+    }
+
+    /* Button styling */
+    .text-overlay button {
+        background-color: #f5f7f9;
+        color: rgb(37, 121, 247);
+        border: none;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        /* transition: background-color 0.3s ease, transform 0.2s ease; */
+    }
+
+    /* Hiệu ứng hover */
+    .text-overlay button:hover {
+        background-color: #0351a4;
+        transform: scale(1.05);
+        color: #f5f7f9;
+    }
+
+    .text-overlay button:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    }
+
+    /* Vì sao lựa chọn */
+    .container-menu {
+        margin-top: 200px;
+        text-align: center;
+        padding: 40px 100px;
+        width: 100%;
+
+    }
+
+    .heading {
+        font-size: 2.7rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .subheading {
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+        color: #555;
+    }
+
+    /* CSS cho các cột */
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 10px;
+
+    }
+
+    .column {
+        background-color: #f5f7f9;
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        /* Thêm padding để căn lề nội dung bên trong */
+    }
+
+
+    .column h3 {
+        font-size: 1.8rem;
+        font-family: "Helvetica";
+        margin-bottom: 15px;
+    }
+
+    .column p {
+        font-size: 1.3rem;
+        color: #5b5959;
+
+    }
+
+    /* CSS cho ảnh banner-2 */
+    .banner-container-2 {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+
+    .banner-2 {
+        /* padding-top: 30px; */
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    /* text 2 */
+
+    .text-overlay-2 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text-overlay-2 h1,
+    .text-overlay-2 h2 {
+        font-weight: 300;
+        margin-bottom: 10px;
+
+    }
+
+
+    /* Style cho button */
+    .text-overlay-2 button {
+        font-family: 'Roboto', sans-serif;
+        background-color: #0354a5;
+        color: rgb(254, 254, 254);
+        border: none;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+
+    }
+
+    .text-overlay-2 button:hover {
+        background-color: #ffffff;
+        transform: scale(1.05);
+        color: #0248b0;
+    }
+
+    .text-overlay-2 button:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    }
+
+    /*-----------------------  dịch vụ đầu tư--------------------------------- */
+    .container-menu-2 {
+        margin-top: 50px;
+        text-align: center;
+        padding: 40px 100px;
+        width: 100%;
+
+    }
+
+    .heading-2 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .subheading-2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+        color: #555;
+    }
+
+    /* CSS cho các cột */
+    .columns-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .column-2 {
+        background-color: #f5f7f9;
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        gap: 15px;
+    }
+
+
+    .column-2 img {
+        width: 460px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    /* Nội dung */
+    .column-2 .content {
+        width: 100%;
+        /* Đảm bảo nội dung chiếm hết chiều rộng cột */
+    }
+
+    .column-2 .content h5 {
+        font-size: 1.8rem;
+        font-family: "Helvetica", sans-serif;
+        margin-bottom: 10px;
+        text-align: left;
+        /* Căn lề trái */
+    }
+
+    .column-2 .content p {
+        font-size: 1.2rem;
+        color: #5b5959;
+        margin-bottom: 15px;
+        text-align: left;
+        /* Căn lề trái */
+    }
+
+    .column-2 .content a {
+        text-decoration: none;
+        color: #0056b3;
+        font-size: 1.2rem;
+        text-align: left;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+
+    /* Thẻ hr */
+    .column-2 .content hr {
+        width: calc(100% - 40px);
+        border: 1px solid #ddd;
+        margin: 15px auto;
+        /* Tự động cân đối lề trái và phải */
+    }
+
+
+    /*------------------------- form  nhập ------------------------------------*/
+
+
+    /* Form container */
+    .form-container {
+        width: 160%;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        margin-bottom: 90px;
+        
+    }
+
+    /* Căn chỉnh tên, email và số điện thoại trên cùng một dòng */
+    .input {
+        display: flex;
+        gap: 20px;
+        /* Khoảng cách giữa các input */
+        justify-content: space-between;
+    }
+
+    .input .form-group {
+        flex: 1;
+        /* Các input sẽ chiếm không gian đều */
+    }
+
+    .input .form-control {
+        width: 100%;
+        /* Đảm bảo các input chiếm toàn bộ không gian của .form-group */
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 30px;
+    }
+
+    /* Căn chỉnh lời nhắn */
+    .comment textarea {
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: none;
+        margin-bottom: 30px;
+        /* Không cho phép thay đổi kích thước */
+    }
+
+    /* Nút gửi yêu cầu */
+    button {
+        display: inline-block; /* Thay đổi từ block thành inline-block */
+        width: auto; /* Đặt chiều rộng tự động để button chỉ chiếm không gian cần thiết */
+        padding: 12px 25px; /* Thêm padding để làm nút lớn hơn */
+        font-size: 1rem;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        margin: 20px auto 0; /* Căn giữa nút bằng margin tự động */
+    }
+    
+    button:hover {
+        background-color: #003e7e;
+        transform: scale(1.05);
+    }
+    
